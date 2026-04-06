@@ -1,0 +1,40 @@
+You are working on a Quality Architect assessment for InvenTree.
+
+Follow the instructions in agents/phase-1-requirements-ui-tests/SKILL.md exactly.
+
+Goal:
+Analyze the real Parts-module UI and available documentation, then generate corrected UI/manual test cases grounded in what is actually visible in the application.
+
+Important:
+The local source folder is the primary input for this phase.
+
+Primary local input folder:
+agents/phase-1-requirements-ui-tests/source/
+
+Inside this folder, you may find:
+- screenshots of login, dashboard, navigation, parts page, part detail pages, modals, tabs, and forms
+- documentation files
+- notes or markdown summaries
+
+Execution rules:
+1. Read the source folder first.
+2. Treat screenshots as the primary source for actual visible UI behavior and labels.
+3. Use documentation as supporting context, not as the only truth.
+4. If screenshots and docs differ, clearly record the mismatch.
+5. Update the requirements summary based on observed UI.
+6. Update the manual test cases so they match the actual UI flow, names, tabs, buttons, menus, and visible components.
+7. Do not invent tabs, fields, controls, or actions that are not visible in screenshots unless clearly documented and marked as documentation-only.
+8. Categorize findings as:
+   - Observed in UI
+   - Documented but not observed
+   - Ambiguous / needs confirmation
+
+Required outputs:
+- outputs/phase-1/source-inventory.md
+- outputs/phase-1/ui-observation-map.md
+- outputs/phase-1/requirements-summary.md
+- outputs/phase-1/ui-coverage-matrix.md
+- outputs/phase-1/ui-manual-tests.md
+- outputs/phase-1/ui-doc-vs-screenshot-mismatches.md
+
+Start by scanning the phase-1 source folder and building a source inventory.

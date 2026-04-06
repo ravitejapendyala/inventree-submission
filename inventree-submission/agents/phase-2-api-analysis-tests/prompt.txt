@@ -1,0 +1,51 @@
+You are working on a Quality Architect assessment for InvenTree.
+
+Follow the instructions in agents/phase-2-api-analysis-tests/SKILL.md exactly.
+
+Goal:
+Analyze the InvenTree Parts API by first scraping the schema page, then generate:
+1. API manual test cases
+2. Playwright + TypeScript API automation
+
+Primary local input folder:
+agents/phase-2-api-analysis-tests/source/
+
+Primary schema source URL:
+https://docs.inventree.org/en/stable/api/schema/part/
+
+Execution rules:
+1. Read the phase-2 source folder first.
+2. If the scraped schema artifacts do not already exist, run the local scraper script to traverse the full schema page and extract all available endpoints and schemas.
+3. Use the generated schema artifacts as the primary basis for endpoint inventory, field mapping, validation rules, request body design, and response assertions.
+4. Use screenshots and docs in the source folder only as supporting context.
+5. Focus especially on endpoints relevant to:
+   - Parts
+   - Part Categories
+   - filtering, pagination, search
+   - category parameter templates
+   - pricing
+   - related parts
+   - test templates
+   - stocktake
+   - thumbnail / media related endpoints if relevant
+   - part detail endpoints such as pricing, requirements, serial numbers, bom validation
+6. Generate manual API test cases based on scraped schema evidence.
+7. Generate Playwright + TypeScript API automation using APIRequestContext.
+8. Clearly document assumptions if auth, required seed data, or environment setup are unclear.
+
+Required outputs:
+- outputs/phase-2/source-inventory.md
+- outputs/phase-2/api-schema-analysis.md
+- outputs/phase-2/api-endpoint-matrix.md
+- outputs/phase-2/api-manual-tests.md
+- outputs/phase-2/api-assumptions-and-gaps.md
+- outputs/phase-2/api-automation/...
+
+Important:
+The scraper output should be treated as the primary structured source for this phase.
+
+Start by:
+1. scanning the phase-2 source folder
+2. checking whether scraped schema artifacts already exist
+3. if not, running the schema scraper
+4. building the endpoint inventory from the scraper output

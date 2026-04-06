@@ -1,0 +1,86 @@
+You are working on Phase 3: UI Automation for InvenTree.
+
+Your task is to generate Playwright TypeScript automation from:
+1. UI screenshots (source of truth)
+2. Manual test cases from Phase 1 (ui-manual-tests.md)
+3. Any supporting documentation in source folder
+
+---
+
+Step 1: Analyze Input
+- Read all screenshots from source/screenshots/
+- Understand UI structure:
+  - Login page
+  - Dashboard
+  - Parts page
+- Identify:
+  - Navigation flow
+  - UI elements
+  - Forms
+  - Tables
+
+---
+
+Step 2: Validate Manual Test Cases
+- Compare Phase 1 test cases with screenshots
+- Fix mismatches
+- Align flows with actual UI
+
+---
+
+Step 3: Select Critical Test Cases
+- Pick ONLY 10 high-value test cases
+- Focus on:
+  - Login
+  - Navigation
+  - Part creation
+  - Search
+  - View/Edit/Delete
+
+---
+
+Step 4: Generate Automation Code
+
+Use:
+- Playwright
+- TypeScript
+- Page Object Model
+
+Structure:
+
+pages/
+  login.page.ts
+  dashboard.page.ts
+  part.page.ts
+
+tests/
+  part.spec.ts
+
+---
+
+Step 5: Implement Automation
+
+Ensure:
+- Clean selectors (based on UI)
+- Reusable functions
+- Assertions
+- Proper waits
+
+---
+
+Step 6: Output
+
+Provide:
+
+1. Final list of 10 automated test cases
+2. Page Object files
+3. Test spec file
+4. Explanation of critical flows automated
+
+---
+
+Important Rules:
+- Screenshots override manual test cases
+- Do not assume UI
+- Do not generate more than 10 tests
+- Ensure realistic user behavior
